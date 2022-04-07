@@ -6,11 +6,8 @@ import {Component} from '@angular/core'
     <div>
         <h1>Upcoming Angular Events</h1>
         <hr>
-        {{savedValue}}
-        <event-thumbnail
-         [event]= "event1"
-         (counter)="lol($event)" 
-           > </event-thumbnail>
+        <div class="well">Hello World </div>
+        <event-thumbnail [event]= "event1" > </event-thumbnail>
     </div>
 `,
 
@@ -33,11 +30,7 @@ export class EventsListComponent{
         }
     }
 
-    savedValue: number = 0
-
-    lol(value: number) {
-        this.savedValue = value
-    }
+   
 
     
     
