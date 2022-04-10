@@ -7,11 +7,18 @@ import { secComp } from './events/secondComponent';
 import { EventsListComponent } from './events/events-list.components';
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { NavBarComponent } from './nav/navbar.component';
+import { CommonModule } from '@angular/common';
+
 
 
 
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    CommonModule
+    
+  ],
   declarations: [
     EventsAppComponent,
     EventsListComponent,
@@ -19,9 +26,7 @@ import { NavBarComponent } from './nav/navbar.component';
     EventThumbnailComponent,
     NavBarComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
